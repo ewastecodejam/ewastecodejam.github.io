@@ -1,105 +1,111 @@
-/*************************/
-/* Styling Header */
-/*************************/
+
 header{
-	
+	    font-family: 'Ubuntu';
 	overflow: hidden;
 }
 
 #top-header{
 		
-	text-align: center;
-	height: 200px;
+    display: flex;
+    
+    justify-content: center;
+    
+    flex-direction: row;
+    
+    text-align: center;
+    
+
+}
+#menu {
+    padding-top: 25px;
 }
 
-/****************/
-/* Styling Logo */
-/****************/
-#logo{
-	float: left;
-	padding: 0px 30px;
-	margin: none;
-	height: 15%;
-	width: 15%;
-}
 
-#logo img{
-	width: 60%;
+
+#menu a {
 
     
-	float: left;
-	padding: 10px 0px;
+    display: inline-block;
+    
+    justify-content: center;
+    
+    flex-direction: row;
+    
+    text-decoration: none;
+    
+    width: 100px;
+    
+    height: 50px;
+
+    padding-top: 25px;
+    
+    background-color: #282829;
 }
 
-/***************************/
-/* Styling Navigation Menu */
-/***************************/
-#menu{
-	float: left;
-    padding: 0px 225px;
-	width: 100%;
-	height: 100%;
-	margin: none;
-}
-	
-#menu ul{
-	text-align: center;
-	float: left;
-	margin: none;
-	background: teal;
-    width: 100%;
-}
-	
-#menu li{
-	display: inline-block;
-	padding: none;
-	margin: none;
+#menu a:hover {
+    background-color: #4a4a4b;
 }
 
-#menu li a, #menu li span{
-	display: inline-block;
-	padding: 0em 1.5em;
-	text-decoration: none;
-	font-weight: 600;
-	text-transform: uppercase;
-	line-height: 60px;
-    transform: translate(-200px, 0%);
-}
-	
-#menu li a{
-		
-	color: #FFF;
-}
-	
-#menu li:hover a, #menu li span{
-	background: #FFF;
-	color: #0074D9;
-	border-left: 1px solid #0074D9;
-	text-decoration: none;
-}
-
-/****************/
-/* Styling Body */
-/****************/
-
-body {
-    background-color: lightgray;
+#menu a:visited {
+    text-decoration: none;
+    
+    color: #8DE4FF;
 }
 
 
-#welcometext{
-    text-align:center;
+#welcome-text {
+    display: flex;
+    
+    justify-content: center;
+    
+    flex-direction: column;
+
+    
+    padding-top: 100px;
+    
+    padding-left: 100px;
+    
+    padding-right: 100px;
+    
+
+}
+
+#welcome-text h1 {
+    color: #70AE6E;
+    
+    text-align: center;
+    
     font-size: 36px;
 }
 
-#information{
-    text-align: left;
-    padding: 0px 200px;
-    font-size: 24px;
+#welcome-text p {
     
+    text-align: justify;
+    
+    line-height: 36px;
+    color: #B27092;
+    
+    padding-right: 20%;
+    
+    padding-left: 20%;
+    
+    font-size: 24px;
+
 }
 
-#photo1 {
-    width: 50%;
-    height: 50%;
+
+body {
+    background-color: #39393A;
+        font-family: 'Ubuntu';
+    color: #8DE4FF;
 }
+
+nav {
+    display: flex;
+    
+    justify-content: space-around;
+
+    
+    flex-direction: row;
+}
+
