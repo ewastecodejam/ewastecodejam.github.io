@@ -1,0 +1,94 @@
+// Variables
+@background-color-main: #39393a;
+@background-color-menu: #282829;
+@background-color-menu--hover: #4a4a4b;
+@text-main: #8de4ff;
+@text-welcome-main: #b27092;
+@text-welcome-header: #70ae6e;
+@text-welcome-list: #ffc857;
+// Primary Formatting
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Ubuntu";
+  background-color: @background-color-main;
+  color: @text-main;
+  margin: 0;
+  padding: 0;
+}
+// Navbar
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.top-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+
+  .menu {
+    padding-top: 24px;
+
+    a {
+      background-color: @background-color-menu;
+      display: inline-block;
+      flex-direction: row;
+      justify-content: center;
+      width: 100px;
+      height: 50px;
+      text-decoration: none;
+      padding-top: 25px;
+
+      &:hover {
+        background-color: @background-color-menu--hover;
+      }
+
+      &:visited {
+        color: @text-main;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// Welcome Text
+.welcome-text-regular {
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 36px;
+  padding: 0px, 20%;
+}
+
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px, 100px, 0px, 100px;
+  margin: 10px;
+
+  h1 {
+    color: @text-welcome-header;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  p {
+    color: @text-welcome-main;
+    .welcome-text-regular();
+  }
+
+  ul {
+    color: @text-welcome-list;
+    .welcome-text-regular();
+  }
+}

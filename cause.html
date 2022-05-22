@@ -8,28 +8,31 @@
     <title>E-Waste Code Jam 2022 | Home</title>
     <meta name="description" content="We are Jonathan, Markus, and Wayne, three students from Vancouver, BC, who have become alarmed with the growing problem of E-Waste in the world.">
     <meta name="keywords" content="E-Waste, Code Jam, E-Waste Code Jam, E-Waste Code Jam 2022">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet/less" type="text/css" href="./css/styles.less"/>
+    <!-- Import Less.js from JsDelivr CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/less@4/dist/less.min.js"></script>
   </head>
-  <header>
-    <!-- Top header menu containing logo and Navigation bar -->
-    <div id="top-header">
-      <!-- Navigation Menu -->
-      <nav>
-        <div id="menu">
+  <body>
+    <nav>
+      <!-- Top header menu containing logo and Navigation bar -->
+      <div class="top-header">
+        <!-- Navigation Menu -->
+        <div class="menu">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="cause.html">Cause</a>
           <a href="https://itch.io/jam/e-waste-code-jam" rel="nofollow">The Jam</a>
         </div>
-      </nav>
-    </div>
-    <!-- Image menu in Header to contain an Image and a sample text over that image -->
-    <div id="header-image-menu"></div>
-  </header>
-    <div id="welcome-text">
+      </div>
+      <!-- Image menu in Header to contain an Image and a sample text over that image -->
+      <div class="header-image-menu"></div>
+    </nav>
+    <div class="welcome-text">
       <h1>Our Cause</h1>
       <p>We want to help raise awareness about the growing issue of E-Waste. Given how crucial digital technology has become in the modern world, it is now everybody's responsibility to think about the consequences of E-Waste.<br>
         <br>The primary issue with E-Waste is the over consumption of technology. Whenever a new smartphone model is released, hoards of people drive to the store to purchase it. This is done while simultaneously throwing out their old smartphone. The same is true for any piece of technology, from laptops to toasters.<br>
